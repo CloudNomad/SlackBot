@@ -8,13 +8,13 @@ import (
  
 func main() {
  
-    OAUTH_TOKEN := "OAUTH_TOKEN" // Paste your bot user token here
-    CHANNEL_ID := "CHANNEL_ID" // Paste your channel id here
+    OAUTH_TOKEN := "OAUTH_TOKEN"
+    CHANNEL_ID := "CHANNEL_ID"
  
     api := slack.New(OAUTH_TOKEN)
     attachment := slack.Attachment{
-        Pretext: "Pretext",
-        Text:    "Hello from GolangDocs!",
+        Pretext: "A message from Josh",
+        Text:    "You never see me coming!",
     }
  
     channelId, timestamp, err := api.PostMessage(
