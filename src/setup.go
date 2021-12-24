@@ -8,6 +8,9 @@ import (
  
 func main() {
  
+    url := fmt.Sprintf("https://slack.com/api/rtm.start?token=%s", token)
+    resp, err := http.Get(url)
+ 
     OAUTH_TOKEN := "OAUTH_TOKEN"
     CHANNEL_ID := "CHANNEL_ID"
  
